@@ -55,17 +55,29 @@
             color: white;
             border: none;
         }
+      
+        #btn-submit:hover{
+            background-color: darkgreen;
+            
+        }
+        
         .input-box{
             font-size: 18px;
-            padding-bottom: 12px;
+            padding-bottom: 6px;
             margin-bottom: 36px;
             border-top: 0;
             border-left:0;
             border-right:0;
             border-bottom: 1px solid black;
             width: 100%;
+            text-transform: capitalize;
+            padding-top: 6px;
+            outline: none;
+            
             
         }
+        
+        
     </style>
 </head>
 <body>
@@ -76,10 +88,10 @@
             <span ><a href="./contact.html" class="nav-contact">Contact</a></span>
         </nav>
     </header>
-    <div id="input-wraper">
+    <form id="input-wraper">
         <div>
             <input class="input-box" type="text" name="username" placeholder="Username" required>
-        </div>
+        </div>  
         <div>
          <input class="input-box" type="email" name="email" placeholder="email" required>
      </div>
@@ -90,6 +102,6 @@
          <input class="input-box" type="number" name="Number" min="0" placeholder="your number" required>
      </div>
      <input id="btn-submit" type="submit" value="Submit" name="submit">
-    </div>
+    </form>
 </body>
 </html>
